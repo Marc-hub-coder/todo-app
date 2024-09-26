@@ -1,0 +1,74 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EDE8DC;
+    padding: 10px;
+    margin: 10px auto;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .todo-text {
+    font-size: 18px;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .edit-input {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .complete-button,
+  .edit-button,
+  .delete-button,
+  .save-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .complete-button:hover,
+  .edit-button:hover,
+  .save-button:hover {
+    background-color: #0056b3;
+    animation: bubble 0.2s ease-out;
+  }
+  
+  .complete-button:disabled,
+  .edit-button:disabled,
+  .delete-button:disabled {
+    background-color: #E7CCCC;
+    cursor: not-allowed;
+  }
+  
+  .delete-button:hover {
+    background-color: #dc3545;
+    animation: bubble 0.2s ease-out;
+  }
+  
+  .delete-button:disabled:hover,
+  .edit-button:disabled:hover,
+  .complete-button:disabled:hover {
+    background-color: #E7CCCC;
+  }
+
+  .todo-item.completed{
+    background-color: #a5b68db2;
+  }
+  
